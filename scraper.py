@@ -83,7 +83,7 @@ while not done:
 print 'skipped %d decks ' % len(skipped_decks)
 f = open(folder + '_skipped.txt', 'w+')
 for skipped_deck in skipped_decks:
-    f.write(skipped_deck)
+    f.write(skipped_deck + '\n')
 f.close()
 
 print 'downloaded %d decks ' % download_count 
